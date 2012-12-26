@@ -2,7 +2,7 @@
 User management using Puppet and Hiera
 
 ## History 
-This is a puppet module originally based on [puppet-ssh-hiera]{https://github.com/credativ/puppet-ssh-hiera}.
+This is a puppet module originally based on [puppet-ssh-hiera](https://github.com/credativ/puppet-ssh-hiera).
 
 You should check out that module and the rest of his work; It's great stuff!
 
