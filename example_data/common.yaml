@@ -1,0 +1,48 @@
+groups:
+    adm:
+        system: true
+    cdrom:
+        system: true
+    sudo:
+        system: true
+    dip:
+        system: true
+    plugdev:
+        system: true
+    lpadmin:
+        system: true
+    sambashare:
+        system: true
+    libvirtd:
+        system: true
+    vboxusers:
+        system: true
+
+users:
+    mhenry:
+        gecos: "Michael Henry"
+        additional_groups:
+            - "adm"
+            - "cdrom"
+            - "sudo"
+            - "dip"
+            - "plugdev"
+            - "lpadmin"
+            - "sambashare"
+            - "libvirtd"
+            - "vboxusers"
+        shell: "/bin/bash"
+        gid: 1000
+        uid: 1000
+        pwhash: "$2$NBHNFL54$AS/...Af.FEJyXYIsdZn7H...YrWQu4b1xsL19u31mUrm..."
+        ssh_keys:
+            mhenry@E1505:
+                type: "ecdsa-sha2-nistp521"
+                key: "AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAFDwRPe9R8MqSi...1L+03ZzusI3nROGslWjnI8eCylAZ97NFLF26KG..."
+            mhenry@agamemnon:
+                type: "ssh-rsa"
+                key: "AAAAB3NzaC1yc2EAAAABIwAAAgEAvIK/0IcPl+1SPcqIx009R44BP5w...X57GLQNSm6yW3Ymdn7wR2NJAG6zYJ7Uac6K62gZFUMYg1UeNkY..."
+            mhenry@osxlaptop:
+                type: "ssh-rsa"
+                key: "AAAAB3NzaC1yc2EAAAADAQAB...BAQDoYYXJZfQigsp/M1XV2ulTAHj/ZbnFmup2uUp0+XH7VdxdDw94eeTwAzLOvws3pL5qX/uhSQTgt1i5..."
+
