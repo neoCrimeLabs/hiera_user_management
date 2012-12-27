@@ -1,4 +1,12 @@
 class user_management () {
-  include user_management::groups
-  include user_management::users
+  $groups = hiera("groups")
+  if $groups {
+    create_resources(user_management::group, $groups)
+  }
+
+  $users = hiera("users")
+  if $users {
+    create_resources(user_management::user, $users)
+  }
 }
+
